@@ -4,9 +4,6 @@
   <meta charset='UTF-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Document</title>
-  <script>
-    alert("test");
-  </script>
 </head>
 <body>
   <main>
@@ -14,5 +11,16 @@
     これはfeature/aで作られました
     <p>feature/aの修正</p>
   </main>
+  <script>
+    var tensuuObj = {"足立" : 65, "安藤" : 78};
+    var goukeiTen = 0;
+    var ninnzuu = 0;
+    for (var key in tensuuObj) {
+        goukeiTen += tensuuObj[key];
+        ninnzuu ++;
+    }
+    var heikinTen = goukeiTen / ninnzuu;
+    alert(heikinTen);
+  </script>
 </body>
 </html>
